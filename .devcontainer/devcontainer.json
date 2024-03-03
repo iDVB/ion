@@ -3,11 +3,13 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"golang.go"
+				"golang.go",
+				"ms-vscode.makefile-tools"
 			]
 		}
 	},
+	"postCreateCommand": "go mod download",
 	"features": {
-		"ghcr.io/marcozac/devcontainer-features/goreleaser:1": {}
+		"ghcr.io/shyim/devcontainers-features/bun:0": {}
 	}
 }

@@ -112,6 +112,27 @@ new Nextjs("Web", {
 });
 ```
 
+### Contributing
+
+the quickest way to get up and running is to either use container dev workflow either locally (Docker) or use Github Codespaces. There is a `.devcontainer/devcontainer.json` that completely sets up your environment with all the deps.
+
+Build latest version of sst cli for dev use.
+```bash
+make dev
+```
+
+Add link to that sst cli to your PATH.
+```bash
+source setup-env.sh
+```
+
+Example of If you want to use/deploy one of the examples try:
+```bash
+cd examples/nextjs
+npm i
+sst deploy
+```
+
 ---
 
 Join the `#ion` channel in our [Discord](https://sst.dev/discord) to learn more and contribute.
